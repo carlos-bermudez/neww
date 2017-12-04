@@ -1,0 +1,21 @@
+---
+name: sentiment-naivebayes
+module: sentiment-naivebayes
+description: Sentiment classifier based on NLTK's NaiveBayes classifier
+author: "@militarpancho"
+version: '1.1'
+url: "https://lab.cluster.gsi.dit.upm.es/senpy/senpy-tutorial"
+requirements: {nltk}
+maxPolarityValue: "1"
+minPolarityValue: "-1"
+extra_params:  
+  language:    
+   aliases:    
+   - language    
+    - l    
+   required: false    
+   options:    
+   - en
+   default: en    
+corpora_path: "/data/vader/tweets_GroundTruth.txt"
+download_path: "/data/nltk_data"
